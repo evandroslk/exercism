@@ -5,34 +5,34 @@ import java.util.List;
 
 public class LanguageList {
 	
-	private List<String> list = new ArrayList<>();
+	private List<String> languages = new ArrayList<>();
 
-	public void addLanguage(String string) {
-		list.add(string);
+	public void addLanguage(String language) {
+		languages.add(language);
 	}
 
-	public boolean containsLanguage(String string) {
-		return list.contains(string);
+	public boolean containsLanguage(String language) {
+		return languages.contains(language);
 	}
 
 	public int count() {
-		return list.size();
+		return languages.size();
 	}
 
 	public boolean isExciting() {
-		return list.contains("Java") || list.contains("Kotlin");
+		return languages.contains("Java") || languages.contains("Kotlin");
 	}
 
 	public boolean isEmpty() {
-		return list.isEmpty();
+		return languages.isEmpty();
 	}
 
 	public String firstLanguage() {
-		return list.get(0);
+		return languages.get(0);
 	}
 
-	public void removeLanguage(String string) {
-		list.remove(string);
+	public void removeLanguage(String language) {
+		languages.remove(language);
 	}
 
 }
