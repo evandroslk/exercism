@@ -2,6 +2,8 @@ package exercism.org;
 
 public class AnnalynsInfiltration {
 
+	private AnnalynsInfiltration() {}
+
 	public static boolean canSpy(boolean knightIsAwake, boolean archerIsAwake, boolean prisonerIsAwake) {
 		return knightIsAwake || archerIsAwake || prisonerIsAwake;
 	}
